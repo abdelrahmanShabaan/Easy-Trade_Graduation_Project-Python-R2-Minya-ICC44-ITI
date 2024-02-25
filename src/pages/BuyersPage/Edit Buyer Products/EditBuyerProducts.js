@@ -71,7 +71,7 @@ function EditBuyerProducts(){
     <SlideBarBuyer openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar}/>
 
 
-    <form className="product-form">
+    <form className="formclss">
         <label>ID:
           <input type="text" name="id" value={product.id} readOnly />
         </label>

@@ -105,45 +105,49 @@ return(
     <div className='grid-container'>
     <SlideBarBuyer openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar}/>
 
-    <form className="product-form" method="POST">
-        <label>ID:
+
+    <form className='formclss' method="POST">
+        <label className='labels'>ID:
             <input type="text" name="id" value={formData.id} onChange={(e) => setFormData({ ...formData, id: e.target.value })} />
         </label>
         <br />
-        <label>name:
+        <label className='labels'>name:
             <input type="text" name="name" value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
         </label>
         <br />
-        <label>Brand:
+        <label className='labels'>Brand:
             <input type="text" name="brand" value={formData.brand} onChange={(e) => setFormData({ ...formData, brand: e.target.value })} />
         </label>
         <br />
-        <label>Price:
-            <input type="text" name="price" value={formData.price} onChange={(e) => setFormData({ ...formData, price: e.target.value })} />
+        <label className='labels'>Price:
+            <input type="number" name="price" value={formData.price} onChange={(e) => setFormData({ ...formData, price: e.target.value })} />
         </label>
         <br />
-        <label>Category:
+        <label className='labels'>Category:
             <input type="text" name="category" value={formData.category} onChange={(e) => setFormData({ ...formData, category: e.target.value })} />
         </label>
         <br />
-        <label>Seller ID:
+        <label className='labels'>Seller ID:
             <input type="text" name="sellerid" value={formData.sellerid} onChange={(e) => setFormData({ ...formData, sellerid: e.target.value })} />
         </label>
         <br />
-        <label>Inventory:
+        <label className='labels'>Inventory:
             <input type="text" name="inventory" value={formData.inventory} onChange={(e) => setFormData({ ...formData, inventory: e.target.value })} />
         </label>
         <br />
-        <label>Product ID:
+        <label className='labels'>Product ID:
             <input type="text" name="productid" value={formData.productid} onChange={(e) => setFormData({ ...formData, productid: e.target.value })} />
         </label>
         <br />
-        <label>Customer ID:
+        <label className='labels'>Customer ID:
             <input type="text" name="customerid" value={formData.customerid} onChange={(e) => setFormData({ ...formData, customerid: e.target.value })} />
         </label>
         <br />
         <button type="button" className="add-product-button" onClick={handleAddProduct}> Add Product </button>
         </form> 
+
+      
+
     </div>
         
         </>

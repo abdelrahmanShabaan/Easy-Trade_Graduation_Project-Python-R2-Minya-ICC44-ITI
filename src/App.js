@@ -30,9 +30,9 @@ function App() {
     <div className="App">
       <Provider store={store}>
         <BrowserRouter>
-{/*          
+         
          <Header />
-          <Sidebar />   */}
+          <Sidebar />  
 
 
           <Routes>        
@@ -52,7 +52,7 @@ function App() {
             <Route path="/EditBuyerProducts/:id" element={<EditBuyerProducts />} />
 
           </Routes>
-          {/* <Footer /> */}
+          <Footer />
 
   
         </BrowserRouter>

@@ -67,14 +67,14 @@ function ShowBuyerProducts(){
 return(
     <>
     
-    <div className='grid-container'>
+    <div className='grid-containerwa'>
     <SlideBarBuyer openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar}/>
 
 
-    <div className="product-list-container">
-    <h1>Product List</h1>
+    <div className="product-list-container-buyer">
+    <h1 className='buyerheader'>Product List</h1>
     <table>
-    <thead style={{ color: 'blue' }}>
+    <thead>
         <tr>
           <th>ID</th>
           <th>Name</th>
@@ -99,8 +99,8 @@ return(
             <td>{product.customerid}</td>
             <td>{product.inventory}</td>
             <td>
-            <button className='btn btn-primary' style={{ margin: '2px' }} onClick={() => handleEditClick(product.id)}> Edit </button>
-            <button className='btn btn-danger' style={{ margin: '2px' }} onClick={() => deleteRev(product.id)}> Delete   </button>
+            <button className="primarys-btn " style={{ margin: '2px' }} onClick={() => handleEditClick(product.id)}> Edit </button>
+            <button  className="dangerssq-btn " style={{ margin: '2px' }} onClick={() => deleteRev(product.id)}> Delete   </button>
             </td>
           </tr>
         ))}
